@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root {
-  --main-color: #cf3d3d;
+  --main-color: #de2323;
   --black-color: #0e0e0e;
   --border: 0.1rem solid rgba(197, 191, 191, 0.455);
 }
@@ -20,6 +20,7 @@ html {
 }
 body {
   background-color: var(--main-color);
+  overflow-x: hidden;
 }
 section {
     padding: 3.5rem 7%;
@@ -51,8 +52,9 @@ section {
 }
 .header .navbar .active,
 .header .navbar a:hover {
-  border-bottom: 0.1rem solid var(--main-color);
+  border-bottom: 0.3rem solid var(--main-color);
   padding-bottom: 0.5rem;
+  border-radius: 0.4rem;
 }
 
 .header .buttons button {
@@ -97,4 +99,47 @@ section {
     border-radius: 30rem;
     cursor: pointer;
 }
+.btn:hover{
+  color: var(--main-color);
+}
 /* Home End */
+/* Menu Start */
+.menu .box-container {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr) );
+}
+.menu .box-container .box {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 3rem;
+  min-height: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.menu .box-container .box img {
+  width:100%; 
+  object-fit: cover;
+}
+.menu .box-container .box .box-head .menu-category {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.menu .box-container .box .box-head h3 {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.menu .box-container .box .price {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.menu .box-container .box .price span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+
+
+/* Menu End */
